@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <main class="conteudo__principal">
+        <section class="cabecalho">
+            <img class="cabecalho__logo" src="assents/iconAlura.png" alt="Logo Alura">
+        </section>
+    
+        <section class="texto">
+            <textarea class="conteudo__principal__input" placeholder="Digite seu texto"></textarea>
+        </section>
+        <div class="conteudo__principal__exclamacao">
+            <img class="exclamacao" src="./assents/exclamation.png" alt="Ícone de exclamação">
+            <p>Apenas letras minúsculas e sem acento.</p> 
+        </div>          
+        <div class="espaco__botoes">
+            <button class="botoes" id="botaoC" onclick="processar('criptografar')">Criptografar</button>
+            <button class="botoes" id="botaoD" onclick="processar('descriptografar')">Descriptografar</button>
+        </div>
+    </main>
+    <section class="conteudo__resultado">
+        <img src="./assents/1.PNG.png" alt="Resultado" id="imagemResultado">
+        <p id="resultado" class="resultado_texto"></p>
+        <button id="copiarBotao" onclick="copiarTexto()">Copiar</button>
+    </section>
+    <footer class="rodape">
+        <p id="projetoJ">Projeto criado por @jorlopes</p>
+    </footer>    
+</body>
+</html>
